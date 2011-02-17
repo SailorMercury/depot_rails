@@ -1,6 +1,6 @@
 <div class="cart_title" >Your Cart</div>
 <table>
-	<%= render @cart %>
+	<%= render(@cart.line_items) %>
 
 <tr class="total_line" >
 	<td colspan="2" >Total</td>
