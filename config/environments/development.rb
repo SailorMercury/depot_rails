@@ -22,5 +22,9 @@ Depot::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+  
+  Depot::Application.configure do
+	config.action_mailer.delivery_method = :test
+  end
 end
 
